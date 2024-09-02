@@ -1,0 +1,48 @@
+package gestorcolaboradorcore;
+
+import java.util.Scanner;
+
+ abstract class Colaborador {
+	private String nome;
+	 private double salario;
+	 	private String cargo;
+	 	private int faltas;
+	 	
+	 	
+	 	public Colaborador (String nome, double salario, String cargo ) {
+	 		this.nome = nome;
+	 		this.salario = salario;
+	 		this.cargo = cargo;
+	 		this.faltas = 0;
+	 	}
+	 	public String getNome() {
+	 		return nome;
+	 	}
+	 	public double getSalario() {
+	 		return salario;
+
+	 	}
+	 		public String getCargo () {	
+	 		return cargo;
+	 		}
+	 	
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scanner = new Scanner (System.in);
+	
+			System.out.println("Romes LTDA");
+			
+			String nome = "Jose";
+			String cargo = "Desenvolvedor Java Júnior";
+			double salario = 3450.11;
+		
+		System.out.println("*******************");
+		System.out.println( "Nome:" + nome + "\nCargo: " + cargo + "\nSalario: " + salario);
+		
+		
+		
+	}
+
+}
